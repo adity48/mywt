@@ -1,0 +1,110 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Tree Manipulation</title>
+</head>
+
+<body>
+
+    <h2>DOM Tree Manipulation</h2>
+
+    <p id="text">Welcome to JavaScript</p>
+
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="addElement()">Add Element</button>
+    <button onclick="removeElement()">Remove Element</button>
+
+    <div id="container"></div>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").textContent = "Text Changed Successfully!";
+        }
+
+        function addElement() {
+            let p = document.createElement("p");
+            p.textContent = "New Element Added Successfully!";
+            p.id = "newElement";
+
+            document.getElementById("container").appendChild(p);
+        }
+
+        function removeElement() {
+            let p = document.getElementById("newElement");
+
+            if (p != null) {
+                p.remove();
+            } else {
+                alert("No element to remove!");
+            }
+        }
+    </script>
+
+</body>
+
+</html
+
+
+
+
+
+
+
+Objective
+The objectives of this practical are:
+1.	To understand the DOM (Document Object Model) tree. 
+2.	To learn how to access HTML elements using getElementById(). 
+3.	To change the text content of an HTML element dynamically. 
+4.	To add new elements dynamically using createElement() and appendChild(). 
+5.	To remove elements dynamically from the DOM tree. 
+6.	To understand how JavaScript can modify an HTML page without reloading it
+
+Problem Statement:
+           Write a JavaScript program to manipulate the DOM tree dynamically.
+The program should:
+•	Access an HTML element using getElementById(). 
+•	Change its text content dynamically. 
+•	Create and add a new element using createElement() and appendChild(). 
+•	Remove an existing element from the DOM tree. 
+•	Display the changes on the webpage.
+Software Requirements:
+•	Operating System: Windows 10/11, Linux, or macOS 
+•	Text Editor: Visual Studio Code / Notepad++ 
+•	Web Browser: Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari 
+
+Hardware Requirements:
+•	Computer or Laptop 
+•	Processor: Intel Core i3 or above (or equivalent) 
+•	RAM: Minimum 4 GB 
+•	Hard Disk: Minimum 100 MB free space 
+•	Keyboard and Mouse 
+•	Monitor 
+
+Theory & Concepts
+3.1 JavaScript Objects
+An object in JavaScript is a collection of properties and methods.
+•	Properties store data.
+•	Methods are functions associated with an object that perform actions.
+Example:
+const calculator = {
+    num1: 10,
+    num2: 5,
+
+    add() {
+        return this.num1 + this.num2;
+    }
+};
+Here:
+•	num1 and num2 are properties.
+•	add() is a method.
+•	this refers to the current calculator object.
+________________________________________
+3.2 Object Properties
+Properties represent values associated with an object.
+Example:
+num1: 10,
+num2: 5
+The calculator uses these properties as input values for its operations.
+________________________________________

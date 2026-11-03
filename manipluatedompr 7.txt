@@ -1,0 +1,52 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+
+<h2 id="heading">Welcome to JavaScript</h2>
+
+<p class="text">This is a DOM example.</p>
+
+<button onclick="changeStyle()">Change Style</button>
+
+<script>
+function changeStyle() {
+    document.getElementById("heading").style.color = "red";
+    document.getElementById("heading").style.fontSize = "30px";
+
+    document.getElementsByClassName("text")[0].style.color = "blue";
+    document.getElementsByClassName("text")[0].style.fontSize = "25px";
+}
+</script>
+
+</body>
+</html>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Objective To understand and implement the Document Object Model (DOM) in JavaScript by selecting HTML elements using their ID and class, and modifying their CSS properties such as color and font-size when a button is clicked using intrinsic event handling. Problem Statement: Create a web page containing HTML elements that can be selected using JavaScript DOM methods. The program should: 1. Select an element using its id. 2. Select an element using its class. 3. Create a button for triggering an event. 4. Use intrinsic event handling such as onclick. 5. Change the text color when the button is clicked. 6. Change the font size when the button is clicked. 7. Display the modified result on the webpage. Software Requirements: Operating System: Windows 10/11, Linux, or macOS Text Editor: Visual Studio Code / Notepad++ Web Browser: Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari Hardware Requirements: Computer or Laptop Processor: Intel Core i3 or above (or equivalent) RAM: Minimum 4 GB Hard Disk: Minimum 100 MB free space Keyboard and Mouse Monitor Theory & Concepts 3.1 Document Object Model (DOM) The Document Object Model (DOM) is a programming interface that represents an HTML document as a tree of objects. JavaScript can use the DOM to: Select HTML elements. Change text content. Modify styles. Add or remove elements. Handle user events. Change HTML attributes. For example: <h1 id="title">Hello World</h1> JavaScript can access this element using: document.getElementById("title"); 3.2 Selecting Elements by ID The getElementById() method is used to select an HTML element using its unique id. Example: const heading = document.getElementById("heading"); HTML: <h1 id="heading">Welcome</h1>An ID should normally be unique within the page. 3.3 Selecting Elements by Class The getElementsByClassName() method can be used to select elements having a particular class. Example: const text = document.getElementsByClassName("message"); If multiple elements have the same class, the method returns a collection of those elements. An individual element can be accessed using an index: text[0]; 3.4 Modifying CSS Styles Using JavaScript JavaScript can modify the CSS style of an HTML element through the style property. Example: heading.style.color = "blue"; heading.style.fontSize = "30px"; Here: color changes the text color. fontSize changes the font size. 3.5 Intrinsic Event Handling Intrinsic event handling means defining an event handler directly in an HTML element using an event attribute such as onclick. Example: <button onclick="changeStyle()">Change Style</button> When the user clicks the button, the changeStyle() function is executed. Other common intrinsic event attributes include: onclick onmouseover onmouseout onchange onload 4. Concept The main concepts demonstrated in this practical are: DOM Selection HTML elements can be selected using JavaScript DOM methods. document.getElementById("heading"); and: document.getElementsByClassName("message"); Event Handling The onclick event executes a JavaScript function when a button is clicked. <button onclick="changeStyle()">Click Me</button> Style Manipulation CSS properties can be modified using the style property. element.style.color = "red"; element.style.fontSize = "25px"; JavaScript Function A function contains the instructions that should be executed when the button is clicked.

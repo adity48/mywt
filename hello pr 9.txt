@@ -1,0 +1,94 @@
+```java
+package mypackage;
+
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/hello")
+public class HelloServlet extends HttpServlet {
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+
+        response.setContentType("text/html");
+
+        PrintWriter out = response.getWriter();
+
+        out.println("<html>");
+        out.println("<body>");
+        out.println("<h1>Hello World!</h1>");
+        out.println("<h2>Welcome to Java Servlet</h2>");
+        out.println("<p>This is a dynamic HTML page.</p>");
+        out.println("</body>");
+        out.println("</html>");
+    }
+}
+```
+
+
+
+
+
+
+Objective
+To understand the concept of Java Servlet. 
+1.	To create a simple Hello World Servlet. 
+2.	To learn how to extend the HttpServlet class. 
+3.	To override the doGet() method. 
+4.	To generate and display dynamic HTML content using a servlet. 
+5.	To understand the basic working of a web server and servlet
+
+Problem Statement:
+           Create a "Hello World" Servlet using Java.
+The servlet should:
+•	Extend the HttpServlet class. 
+•	Override the doGet() method. 
+•	Receive a GET request from the browser. 
+•	Generate dynamic HTML content. 
+•	Display a Hello World message in the browser.
+Software Requirements:
+•	Operating System: Windows 10/11, Linux, or macOS 
+•	Text Editor: Visual Studio Code / Notepad++ 
+•	Web Browser: Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari 
+
+Hardware Requirements:
+•	Computer or Laptop 
+•	Processor: Intel Core i3 or above (or equivalent) 
+•	RAM: Minimum 4 GB 
+•	Hard Disk: Minimum 100 MB free space 
+•	Keyboard and Mouse 
+•	Monitor 
+
+Theory & Concepts
+3.1 Servlet
+A Servlet is a Java program that runs on a web server and handles requests from clients such as web browsers.
+Servlets are mainly used to create dynamic web applications.
+3.2 HttpServlet
+HttpServlet is a class provided by Java Servlet API. It is commonly extended when creating an HTTP servlet.
+Example:
+public class HelloServlet extends HttpServlet
+3.3 doGet() Method
+The doGet() method is used to handle HTTP GET requests.
+Example:
+protected void doGet(HttpServletRequest request,
+                     HttpServletResponse response)
+When a user accesses the servlet URL through a browser, the server calls the doGet() method.
+3.4 HttpServletRequest
+HttpServletRequest contains information about the request sent by the client.
+It can be used to obtain:
+•	Request parameters 
+•	Headers 
+•	Client information 
+3.5 HttpServletResponse
+HttpServletResponse is used to send a response from the servlet to the client.
+For example:
+response.setContentType("text/html");
+This tells the browser that the response contains HTML content.
+3.6 PrintWriter
+PrintWriter is used to write the response content.
+Example:
+PrintWriter out = response.getWriter();
+out.println("<h1>Hello World</h1>");
+This displays the HTML heading in the browser.

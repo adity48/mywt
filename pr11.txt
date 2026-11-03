@@ -1,0 +1,77 @@
+```java
+package com.demo;
+
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/SessionServlet")
+public class SessionServlet extends HttpServlet {
+
+    public void doGet(HttpServletRequest req, HttpServletResponse res)
+    throws IOException {
+
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+
+        HttpSession session = req.getSession();
+
+        String name = req.getParameter("name");
+
+        session.setAttribute("user", name);
+
+        out.println("<h2>Welcome " + session.getAttribute("user") + "</h2>");
+        out.println("<h3>Session ID: " + session.getId() + "</h3>");
+    }
+}
+```
+
+
+
+Objective
+1.	To understand the concept of session management in Java Servlets. 
+2.	To learn how to create and manage a user session using HttpSession. 
+3.	To store user login information across multiple requests. 
+4.	To retrieve session data from different servlet requests. 
+5.	To implement a simple login and logout mechanism. 
+6.	To understand how session management maintains user information
+
+Problem Statement:
+Implement session management in a Java Servlet using HttpSession.
+The application should:
+•	Accept a username through a login form. 
+•	Create a session after successful login. 
+•	Store the username in the session. 
+•	Display the stored username on another request. 
+•	Provide a logout option that invalidates the session.
+Software Requirements:
+•	Operating System: Windows 10/11, Linux, or macOS 
+•	Text Editor: Visual Studio Code / Notepad++ 
+•	Web Browser: Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari 
+
+Hardware Requirements:
+•	Computer or Laptop 
+•	Processor: Intel Core i3 or above (or equivalent) 
+•	RAM: Minimum 4 GB 
+•	Hard Disk: Minimum 100 MB free space 
+•	Keyboard and Mouse 
+•	Monitor 
+
+Theory & Concepts
+3.1 Session Management
+HTTP is a stateless protocol, which means the server does not automatically remember a user between different requests.
+Session management is used to maintain information about a user across multiple requests.
+For example:
+Login → Welcome Page → Profile → Logout
+The username can be maintained throughout these requests using a session.
+________________________________________
+3.2 HttpSession
+HttpSession is provided by the Servlet API to store information about a particular user.
+A session can store values such as:
+•	Username 
+•	User ID 
+•	Login status 
+•	Shopping cart information 
+•	Preferences 
+________________________________________

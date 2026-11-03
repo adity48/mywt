@@ -1,0 +1,100 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+</head>
+<body>
+
+<h2>Basic Calculator</h2>
+
+<script>
+const calculator = {
+    num1: Number(prompt("Enter first number:")),
+    num2: Number(prompt("Enter second number:")),
+
+    add() {
+        return this.num1 + this.num2;
+    },
+
+    multiply() {
+        return this.num1 * this.num2;
+    }
+};
+
+document.write("First Number: " + calculator.num1 + "<br>");
+document.write("Second Number: " + calculator.num2 + "<br>");
+
+document.write("Addition: " + calculator.add() + "<br>");
+document.write("Multiplication: " + calculator.multiply() + "<br>");
+
+document.write("Square Root: " + Math.sqrt(calculator.num1) + "<br>");
+
+let today = new Date();
+
+document.write("Current Date: " + today.toDateString() + "<br>");
+document.write("Current Time: " + today.toLocaleTimeString());
+
+</script>
+
+</body>
+</html>
+```
+
+
+
+
+
+
+
+Title:- Build a basic calculator object with properties/methods for operations (add, multiply) and use built-in objects (Date, Math). Objective To develop a basic calculator object in JavaScript using properties and methods to perform mathematical operations such as addition and multiplication, and to understand and use JavaScript's built-in objects such as Date and Math. Problem Statement:           Design and implement a JavaScript program that creates a calculator object containing properties to store numbers and methods to perform basic mathematical operations. The calculator should: 1. Store two numbers as object properties. 2. Provide an add() method to add the two numbers. 3. Provide a multiply() method to multiply the two numbers. 4. Use the built-in Math object for mathematical calculations. 5. Use the built-in Date object to display the current date and time. 6. Display the results using console.log(). Software Requirements: Operating System: Windows 10/11, Linux, or macOS Text Editor: Visual Studio Code / Notepad++ Web Browser: Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari Hardware Requirements: Computer or Laptop Processor: Intel Core i3 or above (or equivalent) RAM: Minimum 4 GB Hard Disk: Minimum 100 MB free space Keyboard and Mouse Monitor Theory & Concepts 3.1 JavaScript Objects An object in JavaScript is a collection of properties and methods. Properties store data. Methods are functions associated with an object that perform actions. Example: const calculator = {    num1: 10,    num2: 5,    add() {        return this.num1 + this.num2;    } }; Here: num1 and num2 are properties. add() is a method. this refers to the current calculator object. 3.2 Object Properties Properties represent values associated with an object. Example: num1: 10, num2: 5 The calculator uses these properties as input values for its operations. 3.3 Object Methods Methods are functions defined inside an object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
