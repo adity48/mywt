@@ -1,0 +1,130 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maths and Array Operations</title>
+</head>
+<body>
+
+<h2>Simple Maths Operations</h2>
+
+<script>
+function add(a, b) {
+    return a + b;
+}
+
+function subtract(a, b) {
+    return a - b;
+}
+
+document.write("Addition: " + add(10, 5) + "<br>");
+document.write("Subtraction: " + subtract(10, 5) + "<br>");
+
+let arr = [10, 20, 30];
+
+document.write("<br>Original Array: " + arr + "<br>");
+
+arr.push(40);
+document.write("After Adding Element: " + arr + "<br>");
+
+arr.splice(1, 1);
+document.write("After Removing Element: " + arr + "<br>");
+
+document.write("<br>Array Elements:<br>");
+
+for (let i = 0; i < arr.length; i++) {
+    document.write(arr[i] + "<br>");
+}
+</script>
+
+</body>
+</html>
+```
+
+
+
+
+
+
+
+
+
+
+Assignment no 5.
+
+Q: create a function to calculate simple maths (add/ subtract two numbers) and array operations (add/ remove elements loop with for).
+
+Objective:
+• To develope and understand in a functions in a programming (such as C) that:
+• Perform simple mathematical operations (addition and subtraction of two numbers).
+• Perform array operations such as adding an element, removing an element and traversing the array using a for loop.
+• demonstrating the use of functions for modular and reusable programming.
+
+Problem statement
+The program uses function to calculate to perform basic mathematical operations (addition & subtraction) and array operations (adding, removing and displaying elements using a for loop). It accepts user input executes a the selected operation efficiently and demonstrates the concepts of function
+
+alloys and modular programming.
+• software requirements:
+• operating system: windows 10/11, linux macos.
+• Text editor: visual studio code / notepad++
+• web browser: Google chrome, mozilla firefox, microsoft edge or safari.
+• Hardware requirements:
+• computer or laptop
+• process or intel core i3 or above or (equivalent).
+• RAM: minimum 4GB
+• Hard disk: minimum 100MB free space
+• key board and mouse.
+• monitor.
+• Theory and concepts.
+functions.
+A function is a block of code that performs a specific task. Functions improve code readability, reduce repetition and make programs easy to maintain.
+
+Matoshri College Of Engineering & Research Centre, Eklahare, Nashik.
+
+Advantages of function:
+code reusability.
+better organization.
+easier debugging.
+improved readability.
+mathematically functions.
+
+Array - An array in javascript is a special object used to store multiple values in a single variable. Each value in the array is called an element. an elements are accessed using their index, starting from 0.
+
+Example:
+let numbers = [10, 20, 30, 40, 50];
+console.log(numbers[0]); // 10
+console.log(numbers[2]); // 30
+
+Array operations.
+
+Insertion (Add element):
+o The new element is inserted at the end of a specified position.
+o Deletion (remove Element)
+removes an element from a specified
+
+specified position.  
+remaining elements are shifted left to fill  
+the gap  
+
+3. Traversal (For loop).  
+A for loop visits each array element  
+one by one for displaying and processing.  
+
+• Algorithm:  
+1) Read two numbers.  
+2) Call the addition function and display result.  
+3) Call the subtraction function and display result.  
+4) Add a new element using insertion function.  
+5) Remove an element using deletion function.  
+6) Display updated array using Forloop  
+
+Conclusion:  
+The program demonstrates the effective  
+use of functions to perform mathematical  
+calculations and array operations. Use of  
+functions makes the program modular,  
+reusable and easier to understand.  
+Array insertion, deletion and traversal  
+illustrate fundamental data structure  
+operations.
+
